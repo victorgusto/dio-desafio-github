@@ -1,0 +1,8 @@
+Comandos:
+	- git init: Cria se o repositório 
+	- git add
+		- git add “Nome do arquivo” (Move o arquivo informado para staged)
+		- git add * ou git add . (Move todos os arquivos modificadas do pasta para Staged)	
+	-git commit: Pega todos os arquivos que estavam em staged e envia ao repositório.
+	-git remote add "origin": Vincula o repositório com o repositório remoto
+	-git push origin master: Da push ao repositório remoto
