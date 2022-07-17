@@ -1,11 +1,11 @@
 package one.digitalinnovation.digionebank
 
-abstract class Funcionario(
-      nome: String,
-      cpf: String,
-    val salario: Double,
-) : Pessoa(nome, cpf) {
-    protected abstract fun calculoAuxilio() : Double
+class Gerente(
+    nome: String,
+    cpf: String,
+    salario: Double
+    ) : Funcionario(nome = nome, cpf = cpf, salario = salario) {
+    override fun calculoAuxilio(): Double = salario * 0.4
 
     override fun toString(): String = """
         Nome: $nome
@@ -13,4 +13,5 @@ abstract class Funcionario(
         Salario: $salario
         Auxilio: ${calculoAuxilio()}
         """.trimIndent()
+
 }
